@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="./styles/card.css">
+
+    <script src="./script/card.js"></script>
+</head>
+
+<body>
+    <h1> Shoping Card</h1>
+    <div class="container">
+
+        <div class="wrapper">
+            <div class="product_box">
+                <div class="allImage">
+                    <div class="smallImg">
+                        <img src="https://m.media-amazon.com/images/I/61VuVU94RnL._SX679_.jpg" alt="Iphone"
+                            onclick="clickImage(this)">
+                        <img src="https://m.media-amazon.com/images/I/61cecOpZrxL._SX679_.jpg" alt="Iphone"
+                            onclick="clickImage(this)">
+                        <img src="https://m.media-amazon.com/images/I/51xFCGFuXmL._SX679_.jpg" alt="Iphone"
+                            onclick="clickImage(this)">
+                        <img src="https://m.media-amazon.com/images/I/61YfilUZTUL._SX679_.jpg" alt="Iphone"
+                            onclick="clickImage(this)">
+                    </div>
+                    <div class="mainImg">
+                        <img src="https://m.media-amazon.com/images/I/61cecOpZrxL._SX679_.jpg" alt="Iphone"
+                            id="image_box">
+                    </div>
+                </div>
+
+            </div>
+            <div class="text">
+                <div class="content">
+                    <p class="brand">Brand : Apple</p>
+                    <h2>Apple iPhone 13 (128GB) - Midnight</h2>
+                    <div class="review">
+                        <span>4.6</span>
+                        <span class="fa fa-star"></span> <span class="fa fa-star"></span> <span
+                            class="fa fa-star"></span> <span class="fa fa-star"></span>
+                    </div>
+                    <div class="price_box">
+                        <p class="price">
+                            &#8377;1000
+                        </p>
+                        <strike>&#8377;89000</strike>
+                    </div>
+                    <p>Size:
+                        <select name="size">
+                            <option value="select color">Select colour</option>
+                            <option value="black">black</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                            <option value="purple">purple</option>
+                        </select>
+                    </p>
+                    <p>Quantity
+                        <button id="btn1" onclick="addCard(), Add()">+</button>
+                        <input type="text" id="qnty" value="1" disabled>
+                        <button id="btn2" onclick=" removeCard(),minus()">-</button>
+                    </p>
+                    <button>
+                        <span class="fa fa-shopping-cart"></span>
+                        Add to card
+                    </button>
+                    <button class="buy">
+                        <span class="fa fa-shopping-cart">
+                            buy now
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="summary">
+            <h1>sub Total</h1>
+            <div class="itemWrapper">
+                <div class="details">
+                    <span id="items">
+                        Total item(1)
+                    </span>
+                    <p id="price">&#8377;1000</p>
+                </div>
+                <div id="discount">
+                    <span>discount</span>
+                    <p id="discound_price">&#8377;10</p>
+                </div>
+                <div id="total_price">
+                    <h3>Total Price:</h3>
+                    <p id="Total_Price">&#8377;990</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
