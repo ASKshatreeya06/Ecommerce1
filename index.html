@@ -4,24 +4,26 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>E-cart</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    
 </head>
 
 <body>
+
     <div id="nav"></div>
-    <div class="banner">
-        <img src="https://cdn.dribbble.com/users/2254639/screenshots/18358413/media/e8a8db54cafb270e4c29d044a5a3f5dd.jpg?resize=400x300&vertical=center"
-            alt="banner" style="width: 100%; height: 500px;">
+    <!-- <div class="banner">
+            <img src="https://t3.ftcdn.net/jpg/03/20/68/66/240_F_320686681_Ur6vdYQgDC9WiijiVfxlRyQffxOgfeFz.jpg"
+                alt="banner">
+
+
+        </div> -->
+    <div class="container1">
+        <div class="cart1"></div>
+
+        <div class="main">hello world</div>
     </div>
 
-
-
-
-
-
-
-
-    <div id="main"></div>
     <div id="footer"></div>
 
 
@@ -32,6 +34,25 @@
 
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./App.js"></script>
+    <script>
+        $(function () {
+            $("#nav").load('./nav.html');
+            $(".main").load('./main.html');
+            $(".cart").load('./cart.html');
+            $("#footer").load('./footer.html');
+
+
+
+
+
+
+
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -40,13 +61,7 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="./App.js"></script>
-    <script>
-        $(function () {
-            $("#nav").load('./nav.html');
-            $("#main").load('./main.html');
-            $("#footer").load('./footer.html');
-        });
-    </script>
+
 </body>
 
 </html>
