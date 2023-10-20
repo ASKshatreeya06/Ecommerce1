@@ -6,6 +6,7 @@
 .cardHolder1 {
     display: flex;
     flex-direction: column;
+    margin-left: 5%;
     width: 100%;
 
 }
@@ -14,12 +15,16 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
-    /* width: 77%; */
+    width: 95%;
+    margin-left: 10%;
+    margin-right: 10%;
     margin: 0 10px;
-    padding: 0  10px;
+    margin: auto;
+    padding: 0 10px;
 }
 
-.card {
+.card,
+.card1 {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -31,14 +36,43 @@
     transition: 1s;
 }
 
-.card:hover {
+@media (max-width:970px) {
+
+    .card,
+    .card1 {
+        width: 300px;
+        height: 350px;
+    }
+
+
+
+}
+
+@media (max-width:590px) {
+
+    .card,
+    .card1 {
+        width: 400px;
+        height: 350px;
+        align-items: center;
+    }
+
+    .card>img,
+    .card1>img {
+        width: 400px;
+    }
+}
+
+.card:hover,
+.card1:hover {
     height: 310px;
     width: 210px;
-    border: 2px solid lightblue;
+    border: 5px solid lightblue;
     border-radius: 5%;
 }
 
-.card>img {
+.card>img,
+.card1>img {
     border-radius: 6% 6% 0 0;
     width: 200px;
     height: 250px;
@@ -57,7 +91,8 @@
 .text>h3 {
     margin-left: 9%;
 }
-.text span{
+
+.text span {
     margin-left: 3px;
 }
 
@@ -70,27 +105,45 @@
     margin-top: 3%;
     margin-bottom: 5%;
 }
-.Move{
+
+.Move {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
+
 button {
-    margin: 5px 5%;
-    padding: 5px 10px;
-  
-   
+    width: 150px;
+    /* margin: 5px 5%; */
+    padding: 5px 1px;
+
+
 }
-.moveicon1{
-    right: 90vw; 
-    top: 20vh;
+
+.moveicon1 {
+    right: 90vw;
+    top: 13vh;
     position: absolute;
     z-index: 2;
 }
-.moveicon{
+
+.moveicon {
     position: absolute;
     z-index: 2;
     left: 90vw;
-     top: 20vh;
+    top: 13vh;
 }
 
+.moveiconleft2 {
+    right: 90vw;
+    top: 51vh;
+    position: absolute;
+    z-index: 2;
+}
+
+.moveiconRight2 {
+    position: absolute;
+    z-index: 2;
+    left: 90vw;
+    top: 51vh;
+}
