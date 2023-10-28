@@ -1,4 +1,4 @@
-const slides = document.querySelectorAll(".card");
+const slides = document.querySelectorAll(".card1");
 
 var counter = 0;
 
@@ -109,27 +109,27 @@ window.addEventListener('load', () => { setTimeout(() => { slideImage(); wView()
 //     }
 // );
 
-function leftMove1() {
-    if (counter1 > 0) {
-        counter1--;
-    }
-    slideImage1(counter1);
-}
-function rightMove1() {
-    if (counter1 < (slides1.length - 8)) {
-        counter1++;
+// function leftMove1() {
+//     if (counter1 > 0) {
+//         counter1--;
+//     }
+//     slideImage1(counter1);
+// }
+// function rightMove1() {
+//     if (counter1 < (slides1.length - 8)) {
+//         counter1++;
 
-        console.log(counter1)
-    }
-    slideImage1(counter1);
-}
+//         console.log(counter1)
+//     }
+//     slideImage1(counter1);
+// }
 
-function slideImage1() {
-    slides1.forEach(
-        (card1) => {
+// function slideImage1() {
+//     slides1.forEach(
+//         (card1) => {
 
-            card1.style.transform = `translateX(-${counter1 * 280}px)`
+//             card1.style.transform = `translateX(-${counter1 * 280}px)`
 
-        }
-    );
-}
+//         }
+//     );
+// }

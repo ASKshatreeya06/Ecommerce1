@@ -13,48 +13,51 @@
 
 <body>
     <header class="sticky-top" id="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4 border">
+        <nav class="navbar navbar-expand-md navbar-secondary bg-secondary mb-4 border">
             <div class="container-fluid justify-content-center">
-                <a class="navbar-brand" href="#">Top navbar</a>
+                <a class="navbar-brand" href="./index.html"><img style="height: 35px; margin-left: 10px;"
+                        src="./image/logo1.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Link</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
+                        </li> -->
                     </ul>
-                    <form class="d-flex me-auto" role="search">
+                    <form class="d-flex me-auto align-item-center" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
-
-                    <div class="screen fa fa-shopping-cart mx-4" onclick="cart()"></div>
+                    <a href="./cart.html">
+                        <div class="screen fa fa-shopping-cart mx-4"></div>
+                    </a>
                     <div>
-
-                        <button class="border rounded-start rounded-end">Login</button>
+                        <a href="./Login.html">
+                            <button class="border rounded-start rounded-end mx-5 px-4 py-2">Login</button></a>
                     </div>
                 </div>
             </div>
         </nav>
 
         <!--create a header for navbar inside navbar contain a logo , search_bar input, search button, and three button-->
+
         <div id="secondNav">
             <ul>
                 <li onclick="main()">
-                    <!-- <a href="./about.html"> -->
+                    <a href="index.html">
                         Home
-                    <!-- </a> -->
+                    </a>
                 </li>
-                <li><a href="./about.html">
+                <li><a href="./index.html">
                         All Products
                     </a></li>
 
@@ -66,9 +69,10 @@
                     Man
                 </button>
                 <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    <li><a href="./man.html"><button class="dropdown-item" type="button">All Product</button></a></li>
+                    <li><a href="./pants.html"><button class="dropdown-item" type="button">Pants</button></a></li>
+                    <li><a href="./shirt.html"><button class="dropdown-item" type="button">Shirt</button></a></li>
+                    <li><a href="./hoodi.html"><button class="dropdown-item" type="button">Hoodies</button> </a></li>
                 </ul>
             </div>
 
@@ -79,13 +83,16 @@
                     Women
                 </button>
                 <ul class="dropdown-menu">
-                    <li><button class="dropdown-item" type="button">Action</button></li>
-                    <li><button class="dropdown-item" type="button">Another action</button></li>
-                    <li><button class="dropdown-item" type="button">Something else here</button></li>
+                    <li><a href="./women.html"><button class="dropdown-item" type="button">All Product</button></a>
+                    </li>
+                    <li><a href="./Dresses.html"><button class="dropdown-item" type="button">Dresses</button></a>
+                    </li>
+                    <li><a href="./pants_f.html"><button class="dropdown-item" type="button">Pants</button></a></li>
+                    <li><a href="./skirts.html"><button class="dropdown-item" type="button">Skirts</button></a></li>
                 </ul>
             </div>
             <ul>
-                <li><a href="./about.html">
+                <li><a href="./kids.html">
                         Kids
                     </a></li>
                 <li> <a href="./contact.html">
@@ -97,15 +104,14 @@
 
 
 
-
     </header>
-    <script src="./App.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    <!-- <script src="./App.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
