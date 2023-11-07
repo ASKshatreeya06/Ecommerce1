@@ -1,3 +1,27 @@
+var changeN = 0;
+function change() {
+
+    var heartIcon = document.querySelector('.fa-heart');
+
+    heartIcon.classList.toggle('fa-regular');
+    heartIcon.classList.toggle('fa-solid');
+
+    // if (changeN % 2 == 0) {
+    //     changeN++
+    //     document.querySelector('.fa-heart').classList.remove('.fa-regular');
+    //     document.querySelector('.fa-heart').classList.toggle('.fa-solid');
+        
+       
+        
+    //     console.log("hit fa-heart" + changeN)
+       
+    // } else {
+    //     changeN--
+    //     document.querySelector('.fa-heart').classList.add('.fa-heart_color');
+    //     console.log("hit fa-heart" + changeN)
+    // }
+}
+
 const slides = document.querySelectorAll(".card1");
 
 var counter = 0;
@@ -20,7 +44,7 @@ function leftMove() {
 }
 const wView = () => {
     var y = window.matchMedia("(max-width:590)");
-    
+
     if (y.matches) {
         wd = 1;
         rightMove(wd);
@@ -64,72 +88,6 @@ function slideImage() {
         console.log("else");
     }
 }
-//window.addEventListener('load', slideImage);
+
 window.addEventListener('load', () => { setTimeout(() => { slideImage(); wView(); }, 1000) });
 
-// window.addEventListener('load', slideImage);
-// var x = window.matchMedia("(max-width:590px)");
-// console.log(x)
-// function slideImage(x) {
-
-//     if (x.matches) {
-//         slides.forEach(
-//             (card) => {
-
-//                 card.style.transform = `translateX(-${counter * 350}px)`
-
-
-//             }
-//         );
-//         console.log("move * 350");
-//     }else{
-//         slides.forEach(
-//             (card) => {
-
-//                 card.style.transform = `translateX(-${counter * 250}px)`
-
-
-//             }
-//         );
-//         console.log("move *250");
-//     }
-// }
-
-// // second slider 
-// const slides1 = document.querySelectorAll(".card1");
-
-// var counter1 = 0;
-// console.log(slides1)
-
-// slides.forEach(
-//     (card1, index) => {
-
-//         card1.style.left = `${index * 300}px`
-
-//     }
-// );
-
-// function leftMove1() {
-//     if (counter1 > 0) {
-//         counter1--;
-//     }
-//     slideImage1(counter1);
-// }
-// function rightMove1() {
-//     if (counter1 < (slides1.length - 8)) {
-//         counter1++;
-
-//         console.log(counter1)
-//     }
-//     slideImage1(counter1);
-// }
-
-// function slideImage1() {
-//     slides1.forEach(
-//         (card1) => {
-
-//             card1.style.transform = `translateX(-${counter1 * 280}px)`
-
-//         }
-//     );
-// }

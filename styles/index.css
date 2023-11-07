@@ -141,3 +141,8 @@ button:hover{
     height: fit-content;
     z-index: 2;
 }
+
+.fa-heart{
+    color: red !important;
+    cursor: pointer !important;
+}
